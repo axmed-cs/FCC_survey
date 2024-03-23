@@ -1,0 +1,66 @@
+
+h1, p {
+  text-align: center;
+  font-family: Georgia;
+  color: black;
+}
+
+body{
+color: black;
+background: linear-gradient(#d777,#bebeeb, #be6644);
+font-family: sans-serif;
+margin: 25px;
+}
+
+fieldset{
+  padding: 10px;
+  background-color: #bebeeb;
+  margin: 30px auto;
+  max-width: 400px;
+}
+
+input{
+  display: block;
+  width: 98%;
+  margin-bottom: 10px;
+  margin-top: 4px;
+  
+}
+
+textarea{
+  width: 98%;
+  
+}
+
+input[type="submit"]{
+  color: black;
+  width: unset;
+  margin: auto;
+  min-width: 100px;
+  height: 30px;
+  padding-top: 2px;
+  font-size: 1.1em;
+}
+
+.inline {
+  width: unset;
+  display: inline;
+}
+
+legend{
+  color: black;
+  font-family: sans-serif;
+  float: left;
+  width: 100%;
+  margin-bottom: .6em;
+}
+
+input[type="text"]{
+  padding: 3px;
+}
+input[type="email"]{
+  padding: 3px;
+}
+input[type="number"]{
+  padding: 3px;
+}

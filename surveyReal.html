@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="surveyStyles.css">
+    <title>Survey Form</title>
+  </head>
+  <body> 
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form to join the Book-Review newsletter!<p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name">Enter your first name:  <input id="name" name="name" type="text" placeholder="first-name" required></label>
+          <label id="email">Enter your email: <input id="email" type="email" name="email" placeholder="email" required> </label>
+          <label id="number">Enter your age: <input id="number" type="number" name="age" placeholder="age" min="13" max="120" pattern:[0-9] required>
+            </label>
+        </fieldset>
+        <fieldset>
+          <legend>Where did you hear us from?</legend>
+        <label id="dropdown-label"> 
+          <select id="dropdown">
+            <option value="0">
+              (select one)
+              </option>
+            <option value="1">
+              Blog
+              </option>
+            <option value="2">
+              Social Media
+              </option>
+            <option value="3">
+              Online Forum
+              </option>
+            <option value="4">
+              Other
+              </option>              
+          </select>
+          </label>
+          </fieldset>
+        <fieldset>
+          <legend>Select the preferred newsletter delivery plan:</legend>
+          <label for="weekly">
+            <div>
+            <input value="weekly" id="weekly" name="plan" type="radio" checked class="inline" > Weekly
+            </div>
+            </label>
+            
+          <label for="bi-weekly">
+            <div>
+            <input value="bi-weekly" id="bi-weekly" name="plan" type="radio" class="inline"> Bi-Weekly
+            </div>
+            </label>            
+          </fieldset>
+          <fieldset>
+            <legend>What genres do you prefer? (choose as many):</legend>
+            <label for="adventure">
+              <div>
+                <input class="inline" id="adventure" name="adventure" value="a" type="checkbox"> Adventure 
+              </div>   
+                </label>
+              <label for = "action">   
+                <div>
+                <input name="action" id="action" class="inline" value="b" type="checkbox"> Action
+                </div>
+                </label>
+              <label for="comedy">
+                <div>
+                  <input name="comedy" id="comedy" class="inline" value="c" type="checkbox"> Comedy
+                </div>
+                  </label>
+              <label for="thriller">
+                <div>
+                  <input id="thriller" name="thriller" class="inline" value="d" type="checkbox"> Thriller
+                </div>
+                  </label>
+              <label for="drama">
+                <div>
+                   <input id="drama" name="drama" class="inline" value="e" type="checkbox"> Drama
+                </div> 
+              </label>
+              <label for="fantasy"> <input id="fantasy" name="fantasy" class="inline"value="f" type="checkbox"> Fantasy</label>
+            </fieldset>
+          <!---15. textbox--->
+          <fieldset>
+            <legend>Any additional comments?</legend>
+            <label>
+              <textarea id="comments" name="comments" rows="5" cols="38" placeholder="additional comments..."></textarea>
+              </label>
+            </fieldset>
+            <label>
+              <input  id="submit" type="submit" value="Submit">
+              </label>
+      </form>
+    <body>
+  </html>
